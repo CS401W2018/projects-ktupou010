@@ -1,0 +1,52 @@
+h1 {
+    font-family: Vivaldi;
+    font-size:50px;
+    text-align: center;
+    background-color:darkcyan;
+}
+
+h2 {
+    font-family: 'Segoe UI';
+    font-size: smaller;
+    color:darkolivegreen;
+}
+
+body {
+    background-color: darkgray;
+}
+
+p {
+    font-family: 'Segoe UI';
+    font-size: small;
+    color:darkolivegreen;
+}
+
+dl {
+    font-family: 'Segoe UI';
+    font-size: smaller;
+}
+
+dt {
+    color:darkred;
+}
+
+b {
+    color:darkred;
+}
+
+li {
+    color: darkred;
+}
+
+#secondpar {
+    color:darkslategray;
+}
+
+.favourite {
+    font-style: italic;
+}
+
+.interest {
+    color:black;
+    font-size: medium;
+}
