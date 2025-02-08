@@ -1,0 +1,26 @@
+h1 {
+    font-family: 'Lucida Sans';
+}
+
+.wave {
+    width: 200px;
+    height: 200px;
+}
+
+h2 {
+    font-family: 'Lucida Sans Unicode';
+    font-size: medium;
+}
+
+p {
+    font-family: 'Lucida Grande';
+    font-size: smaller;
+}
+
+ul {
+    font-size: smaller;
+}
+
+ol {
+    font-size: smaller;
+}
