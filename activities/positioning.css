@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 350px;
+}
+
+.floating {
+    float:right;
+}
+
+.universe {
+    width: 200px;
+    border: thin solid black;
+    box-shadow: 10px 10px 20px black;
+}
+
+.universe img {
+    width: 100%;
+}
+
+.clear {
+    clear: both;
+}
+
+.moving {
+    position: fixed;
+    top: 0;
+}
+
+nav a {
+    display:inline-block;
+    background-color: aqua;
+    padding: 10px 5px;
+    border-bottom: thin solid white;
+}
