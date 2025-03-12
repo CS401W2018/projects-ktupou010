@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table</title>
+    <link rel="stylesheet" href="table.css">
+    
 </head>
 <body>
     <header>Web Design</header>
     <main>
         <h1>Tables</h1>
-        <table border="1">
+        <table class="schedule">
+            <caption>Class Schedule</caption>
             <thead>
                 <tr>
                     <th>Department</th>
@@ -128,6 +131,10 @@
         <p>Avoid using tables for narrative content or simple lists that do not need complex structure.</p>
         <h3>When do you need to do extra work for table accessibility?</h3>
         <p>For table accessibility, ensure headers are used properly, add captions and summaries for context, use the scope attribute to define relationships, and make sure the table is readable by screen readers.</p>
+        <h3>Why don't we use the border attribute?</h3>
+        <p>The border attribute was part of older HTML specifications but is now deprecated in favor of CSS. Using CSS to style borders is more versatile and separates content from presentation, adhering to modern web development practices.</p>
+        <h3>What is the easiest way to color every other row a different color?</h3>
+        <p>You can use the CSS :nth-child selector to easily color every other row.</p>
     </main>
     <footer>
         <p>&copy; 2025 Kailani Tupou</p>
