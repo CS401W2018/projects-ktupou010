@@ -12,39 +12,51 @@
     </header>
     <main>
         <form action="processing.html" method="get">
-            <div class="form-row">
-                <label for="fname">Full Name:</label>
-                <input type="text" name="fullname" id="fname" required>
-            </div>
-            <div class="form-row">
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email" required>
-            </div>
-            <div class="form-row">
-                <label for="password">Password:</label>
-                <input type="password" name="password" id="password" required>
-            </div>
-            <div class="form-row">
-                <label for="state">State:</label>
-                <select name="email" id="state">
-                    <option value="blank"></option>
-                    <option value="CO">Colorado</option>
-                    <option value="HI">Hawaii</option>
-                    <option value="UT">Utah</option>
-                    <option value="CA">California</option>
-                    <option value="OR">Oregon</option>
-                </select>
-            </div>
-            <div>
-                <div>Year in School:</div>
-                <label><input type="radio" name="year" value="Freshman">Freshman</label>
-                <label><input type="radio" name="year" value="Softmore">Softmore</label>
-                <label><input type="radio" name="year" value="Junior">Junior</label>
-                <label><input type="radio" name="year" value="Senior">Senior</label>
-            </div>
-            <div class="form-row">
-            <input type="submit">
-            </div>
+            <fieldset>
+                <legend>Create Account</legend>
+                <div class="form-row">
+                    <label for="fname">Full Name:</label>
+                    <input type="text" name="fullname" id="fname" required>
+                </div>
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="form-row">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password" required>
+                </div>
+                <div class="form-row">
+                    <label for="state">State:</label>
+                    <select name="email" id="state">
+                        <option value="blank"></option>
+                        <option value="CO">Colorado</option>
+                        <option value="HI">Hawaii</option>
+                        <option value="UT">Utah</option>
+                        <option value="CA">California</option>
+                        <option value="OR">Oregon</option>
+                    </select>
+                </div>
+                <div class="radio-row">
+                    <div class="form-spacer">Year in School:</div>
+                    <label><input type="radio" name="year" value="Freshman">Freshman</label>
+                    <label><input type="radio" name="year" value="Softmore">Softmore</label>
+                    <label><input type="radio" name="year" value="Junior">Junior</label>
+                    <label><input type="radio" name="year" value="Senior">Senior</label>
+                </div>
+                <div class="form-row">
+                    <label for="comments">Comments:</label>
+                    <textarea name="comments" id="comments">Previous comment</textarea>
+                </div>
+                <div class="radio-row">
+                    <div class="form-spacer"></div>
+                    <label><input type="checkbox" name="remember" id="remember">Remember me</input></label>
+                </div>
+                <div class="form-row">
+                    <div class="form-spacer"></div>
+                    <input type="submit">
+                </div>
+            </fieldset>
         </form>
         <h3>The form tag has an "action" attribute. What does it do?</h3>
         <p>The action attribute in a form tag is an attribute specifies where to send the form's data when it is submitted. It can be a URL or a script that processes the data.</p>
@@ -56,6 +68,10 @@
         </ul>
         <h3>What is the difference between a "POST" and a "GET"?</h3>
         <p>The GET method appends form data to the URL, making it visible and suitable for small data or search queries, while the POST method sends data in the HTTP request body, ideal for larger or sensitive data as it is not appended to the URL. The main difference lies in visibility, data size, and use cases, with GET for data retrieval and POST for actions that modify the server or involve secure data handling.</p>
+        <h3>What are different ways to style your form?</h3>
+        <p>There are several ways to style a form to enhance its appearance and usability. CSS layout techniques like flexbox, grid, inline-block, or float can be used to position and align form elements efficiently. Flexbox is particularly popular because it allows for flexible layouts, simplifies responsive design, and requires fewer lines of code. Input fields can be styled with rounded corners, shadows, or customized fonts and colors to match the theme, while hover and focus effects improve interactivity. Grouping elements using fieldsets and legends, along with proper spacing, adds structure, and responsive design through media queries ensures the form adjusts to various screen sizes. Validation indicators like red borders or error messages provide user feedback, and custom buttons can make the form more visually appealing.</p>
+        <h3>Why does the professor like to use flex?</h3>
+        <p>Because flex is makes css easier and little.</p>
     </main>
     <footer>
         <p>&copy; Kailani Tupou 2025</p>
