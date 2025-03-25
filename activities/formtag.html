@@ -11,7 +11,7 @@
         <h1>Web Design</h1>
     </header>
     <main>
-        <form action="processing.html" method="get">
+        <form action="processing.html" method="get" id="myForm">
             <fieldset>
                 <legend>Create Account</legend>
                 <div class="form-row">
@@ -25,6 +25,10 @@
                 <div class="form-row">
                     <label for="password">Password:</label>
                     <input type="password" name="password" id="password" required>
+                </div>
+                <div class="form-row">
+                    <label for="age">Age:</label>
+                    <input type="number" name="age" id="age" required>
                 </div>
                 <div class="form-row">
                     <label for="state">State:</label>
@@ -72,10 +76,29 @@
         <p>There are several ways to style a form to enhance its appearance and usability. CSS layout techniques like flexbox, grid, inline-block, or float can be used to position and align form elements efficiently. Flexbox is particularly popular because it allows for flexible layouts, simplifies responsive design, and requires fewer lines of code. Input fields can be styled with rounded corners, shadows, or customized fonts and colors to match the theme, while hover and focus effects improve interactivity. Grouping elements using fieldsets and legends, along with proper spacing, adds structure, and responsive design through media queries ensures the form adjusts to various screen sizes. Validation indicators like red borders or error messages provide user feedback, and custom buttons can make the form more visually appealing.</p>
         <h3>Why does the professor like to use flex?</h3>
         <p>Because flex is makes css easier and little.</p>
+        <h3>What is JavaScript? How did it get its name?</h3>
+        <p>JavaScript is a powerful, high-level programming language used primarily to create interactive and dynamic functionalities on websites. It's widely employed for enhancing user experiences by enabling features like animations, form validations, and real-time content updates. Initially called "Mocha," then "LiveScript," it was renamed "JavaScript" as a marketing strategy by Netscape to align with Java's popularity, even though the two languages are distinct and unrelated.</p>
+        <h3>What are the two ways you can run JavaScript?</h3>
+        <p>In the Browser: JavaScript is executed directly by web browsers like Chrome or Safari and On the Server: Using tools like Node.js, JavaScript can also be run on servers for back-end operations.</p>
+        <h3>What was the most popular front-end js library?</h3>
+        <p>Most popular front-end JavaScript library in the past: jQuery was widely regarded as the most popular library for many years due to its simplicity in DOM manipulation and event handling.</p>
+        <h3>What is the most popular front-end js library today?</h3>
+        <p>Most popular front-end JavaScript library today: React.js is currently the leading choice, favored for building scalable and efficient user interfaces.</p>
     </main>
     <footer>
         <p>&copy; Kailani Tupou 2025</p>
     </footer>
+    <script>
+        document.getElementById('myForm').addEventListener('submit',function(event) {
+            event.preventDefault();
+            alert("Form Submitted");
+            const fullname = document.getElementById('fullname').value;
+            const email = document.getElementById('email').value;
+
+            console.log(fullname);
+            console.log(email);
+        })
+    </script>
     
 </body>
 </html>
