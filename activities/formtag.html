@@ -10,6 +10,12 @@
     <header>
         <h1>Web Design</h1>
     </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a> 
+        <a href="#">Contact</a>
+        <a href="#">Help</a>
+    </nav>
     <main>
         <form action="processing.html" method="get" id="myForm">
             <fieldset>
@@ -88,17 +94,7 @@
     <footer>
         <p>&copy; Kailani Tupou 2025</p>
     </footer>
-    <script>
-        document.getElementById('myForm').addEventListener('submit',function(event) {
-            event.preventDefault();
-            alert("Form Submitted");
-            const fullname = document.getElementById('fullname').value;
-            const email = document.getElementById('email').value;
-
-            console.log(fullname);
-            console.log(email);
-        })
-    </script>
+    <script src="formtag.js"></script>
     
 </body>
 </html>
