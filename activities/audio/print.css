@@ -1,0 +1,55 @@
+body { 
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+    font-weight: 300;
+    line-height: normal;
+    color: #0e0d0d;
+    margin: 0;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+nav {
+    display: none;
+}
+
+nav a {
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+    color: #ffffff;
+
+}
+
+nav a:hover {
+    color: #ffd900;
+}
+
+header {
+    background-color: #360c52;
+    color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 10px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.card {
+    border: thin solid #0e0d0d;
+    box-shadow: 3px 3px 3px #404040;
+    width: 200px;
+}
+
+.card figure {
+    margin: 0;
+}
+
+.card img {
+    width: 100%;
+}
