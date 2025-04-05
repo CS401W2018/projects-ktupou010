@@ -154,12 +154,19 @@ caption {
     margin-bottom: 1em;
 }
 
+.main-container {
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+  }
+
 footer {
     background-image: url(backg.jpg);
     height: 40px;
     color: #fff;
     text-align: center;
     font-size: 30px;
+    margin-top: auto;
 }
 
 @media (max-width: 768px) {
