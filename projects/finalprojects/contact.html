@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tools of the Trade</title>
+    <link rel="stylesheet" href="finalprojects.css">
+</head>
+<body>
+    <header>
+        <h1>Tools of the Trade</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tools.html" class="active">Tools</a></li>
+                <li><a href="facts.html">Funny Facts</a></li>
+                <li><a href="styles.html">Techniques</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <aside class="sidebar">
+        <img src="t7.jpeg" alt="Sidebar Image">
+        <img src="t0.jpeg" alt="Sidebar Image">
+      </aside>
+    <main>
+        <section>
+            <h2>Contact Us</h2>
+            <p>We’d love to hear from you! Please fill out the form below.</p>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="style">Favorite Carving Style:</label>
+                <select id="style" name="style">
+                    <option value="relief">Relief Carving</option>
+                    <option value="whittling">Whittling</option>
+                    <option value="chip">Chip Carving</option>
+                </select>
+                
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" rows="4" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <div class="main-container">
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Kailani Tupou</p>
+    </footer>
+    <script>
+        document.querySelector("#contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Thank you for your submission! We’ll be in touch.");
+        });
+    </script>
+</body>
+</html>

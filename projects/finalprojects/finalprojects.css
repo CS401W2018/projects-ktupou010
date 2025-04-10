@@ -160,6 +160,28 @@ caption {
     flex-direction: column;
   }
 
+  form {
+    max-width: 500px;
+    margin: 0 auto;
+    background: #f4f4f4;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 1rem;
+}
+
+input, select, textarea, button {
+    width: 100%;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
 footer {
     background-image: url(backg.jpg);
     height: 40px;
