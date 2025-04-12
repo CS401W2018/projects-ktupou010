@@ -55,8 +55,34 @@
     </footer>
     <script>
         document.querySelector("#contactForm").addEventListener("submit", function(event) {
-            event.preventDefault();
-            alert("Thank you for your submission! We’ll be in touch.");
+            event.preventDefault(); 
+    
+            const formData = {
+                name: document.querySelector("#name").value,
+                email: document.querySelector("#email").value,
+                style: document.querySelector("#style").value,
+                comments: document.querySelector("#comments").value
+            };
+    
+            console.log("Submitting form data to server:", formData);
+    
+            fetch("https://example.com/mock-submit", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" }, 
+                body: JSON.stringify(formData) 
+            })
+            .then(response => {
+                if (response.ok) {
+                    console.log("Form submitted successfully:", response);
+                    alert("Thank you for your submission! We'll be in touch.");
+                } else {
+                    throw new Error("Form submission failed.");
+                }
+            })
+            .catch(error => {
+                console.error("Error during form submission:", error);
+                alert("Oops! Something went wrong. Please try again later.");
+            });
         });
     </script>
 </body>
