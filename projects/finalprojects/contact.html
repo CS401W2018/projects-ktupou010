@@ -22,12 +22,12 @@
     <aside class="sidebar">
         <img src="t7.jpeg" alt="Sidebar Image">
         <img src="t0.jpeg" alt="Sidebar Image">
-      </aside>
+    </aside>
     <main>
         <section>
             <h2>Contact Us</h2>
             <p>We’d love to hear from you! Please fill out the form below.</p>
-            <form id="contactForm">
+            <form id="contactForm" action="processForm.php" method="Get">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
                 
@@ -47,43 +47,9 @@
                 <button type="submit">Submit</button>
             </form>
         </section>
-        <div class="main-container">
-        </div>
     </main>
     <footer>
         <p>&copy; 2025 Kailani Tupou</p>
     </footer>
-    <script>
-        document.querySelector("#contactForm").addEventListener("submit", function(event) {
-            event.preventDefault(); 
-    
-            const formData = {
-                name: document.querySelector("#name").value,
-                email: document.querySelector("#email").value,
-                style: document.querySelector("#style").value,
-                comments: document.querySelector("#comments").value
-            };
-    
-            console.log("Submitting form data to server:", formData);
-    
-            fetch("https://example.com/mock-submit", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" }, 
-                body: JSON.stringify(formData) 
-            })
-            .then(response => {
-                if (response.ok) {
-                    console.log("Form submitted successfully:", response);
-                    alert("Thank you for your submission! We'll be in touch.");
-                } else {
-                    throw new Error("Form submission failed.");
-                }
-            })
-            .catch(error => {
-                console.error("Error during form submission:", error);
-                alert("Oops! Something went wrong. Please try again later.");
-            });
-        });
-    </script>
 </body>
 </html>
